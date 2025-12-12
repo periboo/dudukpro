@@ -1,8 +1,3 @@
-# DudukPro Site
-
-Placeholder website for DudukPro.
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
