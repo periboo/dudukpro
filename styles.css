@@ -284,10 +284,13 @@ a:hover {
 }
 
 .feature-media img {
+  width: 100%;
+  max-width: 420px;   /* roughly ~50% of a big desktop column */
   border-radius: 24px;
   border: 1px solid var(--border-soft);
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
 }
+
 
 .feature-media-grid {
   display: grid;
