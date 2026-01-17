@@ -30,7 +30,7 @@
     <div class="container">
       <h1>DudukPro Privacy Policy</h1>
 
-      <p>Your sound stays on your phone.</p>
+      <p><strong>Your sound stays on your phone.</strong></p>
 
       <p>
         DudukPro is designed as an offline practice tool. All audio processing, analysis and recordings happen directly on your device.
@@ -41,9 +41,9 @@
         <li>Uses the <strong>microphone</strong> only while tuner, analysis, or recording functions are active.</li>
         <li>Uses <strong>access to local storage</strong> to read and play audio files directly on your device.</li>
         <li>
-          Uses <strong>Bluetooth audio</strong> if you choose headphones or speakers in your system settings. Using Bluetooth headphones or
-          speakers is <strong>strongly recommended</strong>, as it allows the tuner (microphone input) and audio playback (drone, metronome,
-          recordings) to work together cleanly without the phone’s speaker and mic interfering with each other.
+          Uses <strong>Bluetooth audio</strong> if you choose headphones or speakers in your system settings. Using Bluetooth headphones or speakers is
+          <strong>strongly recommended</strong>, as it allows the tuner (microphone input) and audio playback (drone, metronome, recordings) to work together
+          cleanly without the phone’s speaker and mic interfering with each other.
         </li>
       </ul>
 
@@ -76,7 +76,7 @@
       <div class="footer-links">
         <a href="https://apps.apple.com/gb/app/dudukpro/id6756457473" target="_blank" rel="noopener noreferrer">App Store</a>
         <a href="privacy.html">Privacy policy</a>
-        <a href="mailto:dudukpro@markusdrayss.com">dudukpro@markusdrayss.com</a>
+        <a href="mailto:dudukpro@markusdrayss.com">Contact</a>
       </div>
     </div>
   </footer>
