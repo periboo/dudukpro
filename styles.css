@@ -69,9 +69,11 @@ a:hover {
 .logo-mark {
   width: 28px;
   height: 28px;
-  border-radius: 6px;
+  border-radius: 6px;   /* optional; remove if you want perfectly square */
   object-fit: cover;
   display: block;
+  background: transparent;
+  padding: 0;
 }
 
 
