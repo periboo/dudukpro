@@ -15,8 +15,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-mark">D</span>
-        <span class="logo-text">DudukPro</span>
+          <img class="logo-mark" src="img/app-icon.png" alt="DudukPro app icon" width="28" height="28" />
+          <span class="logo-text">DudukPro</span>
       </div>
       <nav class="nav">
         <a href="index.html#features">Features</a>
