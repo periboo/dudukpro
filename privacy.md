@@ -5,7 +5,10 @@
   <title>DudukPro – Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Privacy policy for DudukPro." />
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- IMPORTANT: use the correct absolute path for a GitHub Pages project site -->
+  <link rel="stylesheet" href="/dudukpro/styles.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,9 +22,9 @@
         <span class="logo-text">DudukPro</span>
       </div>
       <nav class="nav">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#practice">Practice</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="/dudukpro/index.html#features">Features</a>
+        <a href="/dudukpro/index.html#practice">Practice</a>
+        <a href="/dudukpro/index.html#faq">FAQ</a>
       </nav>
     </div>
   </header>
@@ -75,7 +78,7 @@
       </div>
       <div class="footer-links">
         <a href="https://apps.apple.com/gb/app/dudukpro/id6756457473" target="_blank" rel="noopener noreferrer">App Store</a>
-        <a href="privacy.html">Privacy policy</a>
+        <a href="/dudukpro/privacy.html">Privacy policy</a>
         <a href="mailto:dudukpro@markusdrayss.com">Contact</a>
       </div>
     </div>
