@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
-          <img class="logo-mark" src="img/app-icon.png" alt="DudukPro app icon" width="28" height="28" />
+          <img class="logo-mark" src="img/app-icon02.png" alt="DudukPro app icon" width="28" height="28" />
           <span class="logo-text">DudukPro</span>
       </div>
       <nav class="nav">
