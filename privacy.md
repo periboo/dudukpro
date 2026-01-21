@@ -13,7 +13,7 @@
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="icon" href="/favicon_48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="/favicon_96.png" sizes="96x96" type="image/png">
-  <link rel="icon" href="/favicon_192.png" sizes="96x96" type="image/png">
+  <link rel="icon" href="/favicon_192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 </head>
 
