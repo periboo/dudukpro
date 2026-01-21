@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="icon" href="/favicon_48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="/favicon_96.png" sizes="96x96" type="image/png">
   <link rel="icon" href="/favicon_192.png" sizes="96x96" type="image/png">
