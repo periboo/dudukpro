@@ -511,3 +511,41 @@ a:hover {
     padding-top: 2.4rem;
   }
 }
+
+
+.hero-cover {
+  padding: 18px 0;
+}
+
+.hero-cover-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.hero-cover-img {
+  width: 100%;
+  height: clamp(360px, 62vh, 720px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-cover-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.10) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+}
+
+.hero-cover-content {
+  padding: clamp(20px, 4vh, 44px);
+  max-width: 720px;
+}
+
