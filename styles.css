@@ -653,3 +653,51 @@ a:hover {
     display: none;
   }
 }
+
+/* ===== Safety: prevent accidental reordering ===== */
+.hero-below {
+  display: block; /* ensures normal document flow */
+}
+
+/* ===== Mobile: photo dominant, then text, then badges ===== */
+@media (max-width: 599px) {
+  .hero-cover { padding: 10px 0 12px 0; }
+
+  /* Make image feel like the hero */
+  .hero-cover-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Tighter rhythm */
+  .hero-below { padding: 14px 0 0 0; }
+
+  .hero-below h1 {
+    font-size: clamp(1.7rem, 6.1vw, 2.05rem);
+    line-height: 1.08;
+    max-width: 24ch;
+    margin: 0 auto 10px auto;
+  }
+
+  .hero-below .hero-sub {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    max-width: 46ch;
+    margin: 0 auto 14px auto;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-badge img { height: 48px; }
+
+  /* Optional but usually cleaner on mobile */
+  .hero-note { display: none; }
+
+  .section { padding: 2.25rem 0; }
+}
+
