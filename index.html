@@ -18,6 +18,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="DudukPro is an all-in-one practice companion for duduk: tuner, drones, metronome and audio lab built specifically for the Armenian duduk." />
 
+  <!-- Safari Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6756457473">
+
   <link rel="canonical" href="https://www.dudukpro.app/">
 
   <link rel="stylesheet" href="styles.css" />
@@ -39,20 +42,18 @@
     "@type": "SoftwareApplication",
     "name": "DudukPro",
     "applicationCategory": "MusicApplication",
-    "operatingSystem": "iOS",
+    "operatingSystem": ["iOS", "Android"],
     "description": "All-in-one practice companion for Armenian duduk: tuner, drones, metronome and audio lab.",
     "url": "https://www.dudukpro.app/",
     "image": "https://www.dudukpro.app/img/og-dudukpro-1200x5xx.png",
-    "downloadUrl": "https://apps.apple.com/gb/app/dudukpro/id6756457473",
+    "downloadUrl": [
+      "https://apps.apple.com/gb/app/dudukpro/id6756457473",
+      "https://play.google.com/store/apps/details?id=com.periboo.dudukpro"
+    ],
     "offers": {
       "@type": "Offer",
       "price": "9.99",
       "priceCurrency": "GBP"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "ratingCount": "7"
     }
   }
 ]
@@ -81,13 +82,12 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 </head>
 
-
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">
-            <img class="logo-mark" src="img/app-icon02.png" alt="DudukPro app icon" width="28" height="28" />
-            <span class="logo-text">DudukPro</span>
+        <img class="logo-mark" src="img/app-icon02.png" alt="DudukPro app icon" width="28" height="28" />
+        <span class="logo-text">DudukPro</span>
       </div>
       <nav class="nav">
         <a href="#features">Features</a>
@@ -97,10 +97,10 @@
     </div>
   </header>
 
-<!-- HERO COVER (aligned to container) -->
-<section class="hero-cover">
-  <div class="container">
-    <div class="hero-cover-frame">
+  <!-- HERO COVER (aligned to container) -->
+  <section class="hero-cover">
+    <div class="container">
+      <div class="hero-cover-frame">
         <img
           class="hero-cover-img"
           src="img/og-dudukpro-1200x5xx.png"
@@ -108,33 +108,47 @@
           loading="eager"
           fetchpriority="high"
         />
+      </div>
 
+      <div class="hero-below">
+        <h1>The practice companion for Armenian duduk on your phone or tablet.</h1>
+        <p class="hero-sub">
+          Tuner, drones, metronome and audio lab – built specifically for the Armenian duduk.
+        </p>
+
+        <!-- Official store badges -->
+        <div class="hero-actions" aria-label="Download DudukPro">
+          <a
+            class="store-badge"
+            href="https://apps.apple.com/gb/app/dudukpro/id6756457473"
+            aria-label="Download on the App Store"
+          >
+            <img
+              src="img/badge-appstore.svg"
+              alt="Download on the App Store"
+              width="180"
+              height="60"
+            />
+          </a>
+
+          <a
+            class="store-badge"
+            href="https://play.google.com/store/apps/details?id=com.periboo.dudukpro"
+            aria-label="Get it on Google Play"
+          >
+            <img
+              src="img/badge-googleplay.svg"
+              alt="Get it on Google Play"
+              width="206"
+              height="60"
+            />
+          </a>
+        </div>
+
+        <p class="hero-note">Available now on iPhone and Android.</p>
+      </div>
     </div>
-
-    <div class="hero-below">
-      <h1>The practice companion for Armenian duduk on your phone or tablet.</h1>
-      <p class="hero-sub">
-        Tuner, drones, metronome and audio lab – built specifically for the Armenian duduk.
-      </p>
-
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="https://apps.apple.com/gb/app/dudukpro/id6756457473">
-        Download on the App Store
-      </a>
-      <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.periboo.dudukpro">
-        Get it on Google Play
-      </a>
-    </div>
-
-
-    <p class="hero-note">Available now on iPhone and Android.</p>
-
-    </div>
-  </div>
-</section>
-
-
-
+  </section>
 
   <!-- WHY DUDUKPRO -->
   <section class="section section-why">
@@ -336,15 +350,14 @@
         <p class="footer-title">DudukPro</p>
         <p class="footer-sub">by Periboo</p>
       </div>
-      <div class="footer-links">
-        <nav class="footer-links" aria-label="Footer">
-          <a href="https://apps.apple.com/gb/app/dudukpro/id6756457473">App Store</a>
-          <a href="https://play.google.com/store/apps/details?id=com.periboo.dudukpro">Google Play</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="support.html">Support</a>
-          <a href="mailto:dudukpro@markusdrayss.com">dudukpro@markusdrayss.com</a>
-        </nav>
-      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://apps.apple.com/gb/app/dudukpro/id6756457473">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.periboo.dudukpro">Google Play</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:dudukpro@markusdrayss.com">dudukpro@markusdrayss.com</a>
+      </nav>
     </div>
   </footer>
 </body>
