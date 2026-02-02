@@ -548,19 +548,11 @@ a:hover {
   }
 }
 
-
-/* Bring back the screenshot “halo” on the light theme */
-.feature-media img {
-  box-shadow:
-    0 18px 50px rgba(15, 23, 42, 0.18),
-    0 0 0 1px rgba(15, 23, 42, 0.08);
-}
-
-.hero-cover-frame {
+/*.hero-cover-frame {
   box-shadow:
     0 18px 55px rgba(15, 23, 42, 0.16),
     0 0 0 1px rgba(15, 23, 42, 0.06);
-}
+} */
 
 /* Light theme tweak: header/footer ~15% darker */
 .site-header {
@@ -572,11 +564,8 @@ a:hover {
 }
 
 
-/* Extra-strong halo */
+/* EXACT shadow from the old dark version */
 .feature-media img,
 .feature-media-grid img {
-  box-shadow:
-    0 28px 90px rgba(0, 0, 0, 0.28),
-    0 12px 34px rgba(0, 0, 0, 0.16),
-    0 0 0 1px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
 }
