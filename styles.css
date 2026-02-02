@@ -541,24 +541,59 @@ a:hover {
     display: none;
   }
 
+  /* HERO: tighter vertical rhythm */
   .hero-cover {
-    padding: 12px 0;
+    padding: 10px 0;
+  }
+
+  .hero-cover-frame {
+    border-radius: 16px;
   }
 
   .hero-below {
-    padding-top: 18px;
+    padding: 16px 0 6px 0;
   }
 
+  .hero-below h1 {
+    font-size: clamp(1.85rem, 6.2vw, 2.15rem);
+    line-height: 1.06;
+    max-width: 22ch;       /* reduces “floaty” line breaks */
+    margin: 0 auto 10px auto;
+  }
+
+  .hero-below .hero-sub {
+    font-size: 1rem;
+    line-height: 1.45;
+    max-width: 34ch;
+    margin: 0 auto 14px auto;
+  }
+
+  /* BADGES: slightly smaller + less space */
   .hero-actions {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   .store-badge img {
-    height: 48px;
+    height: 46px;
   }
 
+  .hero-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+
+  /* SECTION: reduce the big jump into “Why DudukPro?” */
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.55rem;
+  }
+
+  /* Keep old hero safe if you ever use it elsewhere */
   .hero {
     padding-top: 2.4rem;
   }
