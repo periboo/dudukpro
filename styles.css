@@ -1,3 +1,4 @@
+```css
 :root {
   --bg: #111113;
   --bg-soft: #18191c;
@@ -134,10 +135,8 @@ a:hover {
   line-height: 1.1;
   margin: 0 0 12px 0;
   letter-spacing: -0.01em;
-  max-width: 34ch;
   margin-left: auto;
   margin-right: auto;
-  text-wrap: balance;
 }
 
 .hero-below .hero-sub {
@@ -492,6 +491,7 @@ a:hover {
     line-height: 1.08;
     max-width: 26ch;
     margin: 0 auto 10px auto;
+    white-space: normal;
   }
 
   .hero-below .hero-sub {
@@ -518,3 +518,11 @@ a:hover {
     max-width: 100%;
   }
 }
+
+/* Desktop: keep hero H1 on one line (if it fits) */
+@media (min-width: 1024px) {
+  .hero-below h1 {
+    white-space: nowrap;
+  }
+}
+```
