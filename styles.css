@@ -157,7 +157,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 32px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
