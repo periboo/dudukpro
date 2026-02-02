@@ -556,3 +556,24 @@ a:hover {
     padding-top: 2.4rem;
   }
 }
+
+
+/* HERO typography polish: prevent awkward 3-line wrap */
+.hero-below {
+  max-width: 920px; /* allow a bit more line length on desktop */
+}
+
+.hero-below h1 {
+  font-size: clamp(2.0rem, 2.55vw, 2.55rem); /* slightly smaller max */
+  line-height: 1.1;
+  max-width: 34ch;          /* controls wrap length for a nicer 2-line break */
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;       /* supported in modern browsers; ignored safely elsewhere */
+}
+
+/* Optional: balance the subline too */
+.hero-below .hero-sub {
+  text-wrap: balance;
+  max-width: 60ch;
+}
