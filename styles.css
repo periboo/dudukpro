@@ -562,3 +562,13 @@ a:hover {
     0 0 0 1px rgba(15, 23, 42, 0.06);
 }
 
+/* Light theme tweak: header/footer ~15% darker */
+.site-header {
+  background: rgba(230, 233, 238, 0.92); /* darker than #f5f6f8 */
+}
+
+.site-footer {
+  background: #e6e9ee; /* ~15% darker than the previous light grey */
+}
+
+
