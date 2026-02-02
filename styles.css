@@ -113,18 +113,12 @@ a:hover {
   background: var(--bg-softer);
 }
 
+/* Desktop/base: natural aspect ratio (no forced height, no crop) */
 .hero-cover-img {
   width: 100%;
+  height: auto;
   display: block;
 }
-
-/* Make the hero image more prominent on mobile */
-.hero-cover-img {
-  height: clamp(320px, 34vh, 320px);
-  object-fit: cover;
-  object-position: center;
-}
-
 
 /* Text block under the cover image */
 .hero-below {
@@ -479,6 +473,13 @@ a:hover {
 
   .hero-cover {
     padding: 12px 0;
+  }
+
+  /* Mobile: center-crop with minimum height */
+  .hero-cover-img {
+    height: clamp(240px, 38vh, 380px);
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero-below {
