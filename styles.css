@@ -547,3 +547,18 @@ a:hover {
     white-space: nowrap;
   }
 }
+
+
+/* Bring back the screenshot “halo” on the light theme */
+.feature-media img {
+  box-shadow:
+    0 18px 50px rgba(15, 23, 42, 0.18),
+    0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+.hero-cover-frame {
+  box-shadow:
+    0 18px 55px rgba(15, 23, 42, 0.16),
+    0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
