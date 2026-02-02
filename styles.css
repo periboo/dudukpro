@@ -122,26 +122,33 @@ a:hover {
 /* Text block under the cover image */
 .hero-below {
   padding: 22px 0 8px 0;
-  max-width: 760px;
+  max-width: 920px;              /* widened to reduce awkward wrapping */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-below h1 {
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  line-height: 1.15;
-  margin: 0 0 10px 0;
+  font-size: clamp(2.0rem, 2.55vw, 2.55rem); /* slightly smaller max */
+  line-height: 1.1;
+  margin: 0 0 12px 0;
   letter-spacing: -0.01em;
+
+  /* Wrap control: helps avoid orphan “tablet.” line */
+  max-width: 34ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance; /* ignored safely where unsupported */
 }
 
 .hero-below .hero-sub {
-  margin: 0 0 16px 0;
-  max-width: 36rem;
+  margin: 0 0 20px 0; /* a bit more breathing room before badges */
+  max-width: 60ch;    /* nicer reading width */
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.05rem; /* slightly larger so it matches the headline weight */
   margin-left: auto;
   margin-right: auto;
+  text-wrap: balance; /* ignored safely where unsupported */
 }
 
 /* --- OFFICIAL STORE BADGES (professional layout) --- */
@@ -555,25 +562,4 @@ a:hover {
   .hero {
     padding-top: 2.4rem;
   }
-}
-
-
-/* HERO typography polish: prevent awkward 3-line wrap */
-.hero-below {
-  max-width: 920px; /* allow a bit more line length on desktop */
-}
-
-.hero-below h1 {
-  font-size: clamp(2.0rem, 2.55vw, 2.55rem); /* slightly smaller max */
-  line-height: 1.1;
-  max-width: 34ch;          /* controls wrap length for a nicer 2-line break */
-  margin-left: auto;
-  margin-right: auto;
-  text-wrap: balance;       /* supported in modern browsers; ignored safely elsewhere */
-}
-
-/* Optional: balance the subline too */
-.hero-below .hero-sub {
-  text-wrap: balance;
-  max-width: 60ch;
 }
