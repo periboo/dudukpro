@@ -98,7 +98,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* --- HERO COVER (current layout) --- */
+/* --- HERO COVER --- */
 
 .hero-cover {
   width: 100%;
@@ -115,49 +115,45 @@ a:hover {
 
 .hero-cover-img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
 /* Text block under the cover image */
 .hero-below {
   padding: 22px 0 8px 0;
-  max-width: 920px;              /* widened to reduce awkward wrapping */
+  max-width: 920px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-below h1 {
-  font-size: clamp(2.0rem, 2.55vw, 2.55rem); /* slightly smaller max */
+  font-size: clamp(2.0rem, 2.55vw, 2.55rem);
   line-height: 1.1;
   margin: 0 0 12px 0;
   letter-spacing: -0.01em;
-
-  /* Wrap control: helps avoid orphan “tablet.” line */
   max-width: 34ch;
   margin-left: auto;
   margin-right: auto;
-  text-wrap: balance; /* ignored safely where unsupported */
+  text-wrap: balance;
 }
 
 .hero-below .hero-sub {
-  margin: 0 0 20px 0; /* a bit more breathing room before badges */
-  max-width: 60ch;    /* nicer reading width */
+  margin: 0 0 20px 0;
+  max-width: 60ch;
   color: var(--muted);
-  font-size: 1.05rem; /* slightly larger so it matches the headline weight */
+  font-size: 1.05rem;
   margin-left: auto;
   margin-right: auto;
-  text-wrap: balance; /* ignored safely where unsupported */
+  text-wrap: balance;
 }
 
-/* --- OFFICIAL STORE BADGES (professional layout) --- */
-
+/* Store badges */
 .hero-actions {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 22px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -190,74 +186,6 @@ a:hover {
   margin-top: 14px;
   font-size: 0.9rem;
   color: var(--muted);
-}
-
-/* --- Old hero (kept for other pages / future use) --- */
-
-.hero {
-  padding: 3.5rem 0 3rem;
-  background: radial-gradient(circle at top left, #12455a, var(--bg));
-}
-
-.hero-inner {
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-@media (min-width: 860px) {
-  .hero-inner {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  }
-}
-
-.hero-copy h1 {
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  line-height: 1.15;
-  margin: 0 0 0.9rem;
-}
-
-.hero-sub {
-  margin: 0 0 1.5rem;
-  max-width: 32rem;
-  color: var(--muted);
-  font-size: 1rem;
-}
-
-.hero-cta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--teal), #00a4ce);
-  color: #041014;
-  box-shadow: 0 14px 40px rgba(0, 135, 173, 0.3);
-}
-
-.btn-primary:hover {
-  filter: brightness(1.05);
-}
-
-.hero-media img {
-  border-radius: 22px;
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.6);
 }
 
 /* Section base */
@@ -541,163 +469,43 @@ a:hover {
     display: none;
   }
 
-  /* HERO: tighter vertical rhythm */
   .hero-cover {
-    padding: 10px 0;
-  }
-
-  .hero-cover-frame {
-    border-radius: 16px;
+    padding: 12px 0;
   }
 
   .hero-below {
-    padding: 16px 0 6px 0;
+    padding-top: 18px;
+    max-width: 560px;
   }
 
   .hero-below h1 {
-    font-size: clamp(1.85rem, 6.2vw, 2.15rem);
-    line-height: 1.06;
-    max-width: 22ch;       /* reduces “floaty” line breaks */
+    font-size: clamp(1.7rem, 6.1vw, 2.05rem);
+    line-height: 1.08;
+    max-width: 26ch;
     margin: 0 auto 10px auto;
   }
 
   .hero-below .hero-sub {
     font-size: 1rem;
     line-height: 1.45;
-    max-width: 34ch;
-    margin: 0 auto 14px auto;
-  }
-
-  /* BADGES: slightly smaller + less space */
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .store-badge img {
-    height: 46px;
-  }
-
-  .hero-note {
-    margin-top: 10px;
-    font-size: 0.85rem;
-  }
-
-  /* SECTION: reduce the big jump into “Why DudukPro?” */
-  .section {
-    padding: 2.25rem 0;
-  }
-
-  .section h2 {
-    font-size: 1.55rem;
-  }
-
-  /* Keep old hero safe if you ever use it elsewhere */
-  .hero {
-    padding-top: 2.4rem;
-  }
-}
-
-
-/* ===== Mobile hero priority: image first, then badges, then text ===== */
-@media (max-width: 599px) {
-  /* Make the image feel like the hero */
-  .hero-cover { padding: 8px 0 12px 0; }
-
-  .hero-cover-frame {
-    border-radius: 18px;
-  }
-
-  /* Force a strong “hero image” presence */
-  .hero-cover-img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  /* Tighten spacing below the image */
-  .hero-below {
-    padding: 12px 0 0 0;
-    max-width: 520px;
-  }
-
-  /* Badges immediately after image */
-  .hero-actions--top {
-    margin: 6px 0 12px 0;
-    gap: 12px;
-    justify-content: center;
-  }
-
-  .store-badge img {
-    height: 46px;
-  }
-
-  /* Text becomes supporting, not dominant */
-  .hero-below h1 {
-    font-size: clamp(1.55rem, 5.8vw, 1.95rem);
-    line-height: 1.1;
-    max-width: 26ch;
-    margin: 0 auto 10px auto;
-  }
-
-  .hero-below .hero-sub {
-    font-size: 0.98rem;
-    line-height: 1.45;
-    max-width: 44ch;
-    margin: 0 auto 0 auto;
-  }
-
-  /* Optional: hide the extra note to reduce clutter (recommended) */
-  .hero-note {
-    display: none;
-  }
-}
-
-/* ===== Safety: prevent accidental reordering ===== */
-.hero-below {
-  display: block; /* ensures normal document flow */
-}
-
-/* ===== Mobile: photo dominant, then text, then badges ===== */
-@media (max-width: 599px) {
-  .hero-cover { padding: 10px 0 12px 0; }
-
-  /* Make image feel like the hero */
-  .hero-cover-img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  /* Tighter rhythm */
-  .hero-below { padding: 14px 0 0 0; }
-
-  .hero-below h1 {
-    font-size: clamp(1.7rem, 6.1vw, 2.05rem);
-    line-height: 1.08;
-    max-width: 24ch;
-    margin: 0 auto 10px auto;
-  }
-
-  .hero-below .hero-sub {
-    font-size: 0.98rem;
-    line-height: 1.45;
     max-width: 46ch;
     margin: 0 auto 14px auto;
   }
 
+  /* Badges in one row */
   .hero-actions {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
   }
 
-  .store-badge img { height: 48px; }
+  .store-badge {
+    max-width: 48%;
+  }
 
-  /* Optional but usually cleaner on mobile */
-  .hero-note { display: none; }
-
-  .section { padding: 2.25rem 0; }
+  .store-badge img {
+    height: 40px;
+    max-width: 100%;
+  }
 }
-
