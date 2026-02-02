@@ -118,6 +118,14 @@ a:hover {
   display: block;
 }
 
+/* Make the hero image more prominent on mobile */
+.hero-cover-img {
+  height: clamp(220px, 34vh, 320px);
+  object-fit: cover;
+  object-position: center;
+}
+
+
 /* Text block under the cover image */
 .hero-below {
   padding: 22px 0 8px 0;
