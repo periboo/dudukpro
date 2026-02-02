@@ -120,7 +120,7 @@ a:hover {
 
 /* Make the hero image more prominent on mobile */
 .hero-cover-img {
-  height: clamp(220px, 34vh, 320px);
+  height: clamp(320px, 34vh, 320px);
   object-fit: cover;
   object-position: center;
 }
