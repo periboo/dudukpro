@@ -569,3 +569,9 @@ a:hover {
 .feature-media-grid img {
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55);
 }
+
+
+/* Tighten spacing between hero block and the next section (support/privacy pages) */
+.hero-cover + .section {
+  padding-top: 1.5rem; /* was effectively ~3rem */
+}
