@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://dudukpro.app/sitemap.xml
+Sitemap: https://wwww.dudukpro.app/sitemap.xml
